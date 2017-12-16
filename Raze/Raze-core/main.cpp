@@ -8,8 +8,9 @@ int main(void)
 	if (!glfwInit())
 		return -1;
 
+		glClearColor(0.2, 0.3,0.8, 1.0);
 	/* Create a windowed mode window and its OpenGL context */
-	window = glfwCreateWindow(640, 480, "Ay Nibba", NULL, NULL);
+	window = glfwCreateWindow(640, 480, "Game", NULL, NULL);
 	if (!window)
 	{
 		glfwTerminate();
