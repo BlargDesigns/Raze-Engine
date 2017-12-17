@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{EB4E790B-459D-41DC-B03B-351166DD7641}</ProjectGuid>
+    <ProjectGuid>{13336166-6E8F-447A-989E-3A2AB7579365}</ProjectGuid>
     <RootNamespace>Razecore</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -71,11 +71,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>$(SolutionDir)Dependencies\GLFW\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Dependencies\GLFW\lib-vc2015;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)Dependencies\GLFW\lib\lib-vc2015;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>$(SolutionDir)Dependencies\GLFW\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Dependencies\GLFW\lib-vc2015;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)Dependencies\GLFW\lib\lib-vc2015;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -126,7 +126,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Gamemanager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
